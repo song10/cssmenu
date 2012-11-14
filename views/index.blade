@@ -1,0 +1,13 @@
+include "layout.blade"
+
+render title(title)
+append block style
+	link(rel='stylesheet', href='/stylesheets/first.css')
+
+include "topmenu.blade"
+include "leftmenu.blade"
+include "content.blade"
+include "downmenu.blade"
+
+append block style
+	link(rel='stylesheet', href='/stylesheets/last.css')
